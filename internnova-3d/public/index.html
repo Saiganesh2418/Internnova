@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>InternNova - Premium Virtual Internships & Learning Tracks</title>
+  <meta name="title" content="InternNova - Premium Virtual Internships & Learning Tracks" />
+  <meta name="description" content="Accelerate your tech career with InternNova. Gain real-world project experience, mentorship from industry experts, and verified internship certificates in Web Development, AI, Data Analytics, and more." />
+  <meta name="keywords" content="InternNova, internships, virtual internships, tech internships, web development, data analytics, cyber security, artificial intelligence, certificates" />
+  <meta name="author" content="InternNova" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://internnova.co.in/" />
+  <meta property="og:title" content="InternNova - Premium Virtual Internships & Learning Tracks" />
+  <meta property="og:description" content="Accelerate your tech career with InternNova. Gain real-world project experience, mentorship from industry experts, and verified internship certificates." />
+  <meta property="og:image" content="/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/original.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <a href="#" class="site-logo">
+      <img src="/logo.png" alt="InternNova" width="140" height="40" style="object-fit:contain;" />
+    </a>
+
+    <nav class="site-nav" aria-label="Main Navigation">
+      <a href="#home" class="nav-link active">Home</a>
+
+      <div class="nav-dropdown-wrapper">
+        <button class="nav-dropdown-btn" aria-haspopup="true">
+          <span>Programs</span>
+          <i data-lucide="chevron-down" class="chevron-icon"></i>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#pro" class="dropdown-item">
+            <i data-lucide="sparkles" class="dropdown-icon"></i>
+            <span>Pro Internships</span>
+          </a>
+          <a href="#courses" class="dropdown-item">
+            <i data-lucide="book-open" class="dropdown-icon"></i>
+            <span>Courses</span>
+          </a>
+          <a href="#internships" class="dropdown-item">
+            <i data-lucide="layers" class="dropdown-icon"></i>
+            <span>Internships</span>
+          </a>
+          <a href="#events" class="dropdown-item">
+            <i data-lucide="calendar" class="dropdown-icon"></i>
+            <span>Events & Workshops</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown-wrapper">
+        <button class="nav-dropdown-btn" aria-haspopup="true">
+          <span>Student Corner</span>
+          <i data-lucide="chevron-down" class="chevron-icon"></i>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#student-corner" class="dropdown-item">
+            <i data-lucide="briefcase" class="dropdown-icon"></i>
+            <span>Projects</span>
+          </a>
+          <a href="#student-corner" class="dropdown-item">
+            <i data-lucide="file-text" class="dropdown-icon"></i>
+            <span>AI Resume Builder</span>
+          </a>
+          <a href="#universities" class="dropdown-item">
+            <i data-lucide="award" class="dropdown-icon"></i>
+            <span>Hall of Fame</span>
+          </a>
+          <a href="javascript:void(0)" onclick="openVerifyModal()" class="dropdown-item">
+            <i data-lucide="check-circle" class="dropdown-icon"></i>
+            <span>Verify Certificate</span>
+          </a>
+          <a href="javascript:void(0)" onclick="openApplyModal('Campus Ambassador')" class="dropdown-item">
+            <i data-lucide="megaphone" class="dropdown-icon"></i>
+            <span>Campus Ambassador</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown-wrapper">
+        <button class="nav-dropdown-btn" aria-haspopup="true">
+          <span>Company</span>
+          <i data-lucide="chevron-down" class="chevron-icon"></i>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="javascript:void(0)" onclick="openApplyModal('Hiring Partner Inquiry')" class="dropdown-item">
+            <i data-lucide="users" class="dropdown-icon"></i>
+            <span>Hire Talent</span>
+          </a>
+          <a href="#why-us" class="dropdown-item">
+            <i data-lucide="info" class="dropdown-icon"></i>
+            <span>About Us</span>
+          </a>
+          <a href="#faq" class="dropdown-item">
+            <i data-lucide="help-circle" class="dropdown-icon"></i>
+            <span>FAQ</span>
+          </a>
+          <a href="javascript:void(0)" onclick="alert('InternNova Terms & Conditions are compliant with Indian MSME regulations.')" class="dropdown-item">
+            <i data-lucide="file-check" class="dropdown-icon"></i>
+            <span>Terms & Conditions</span>
+          </a>
+          <a href="javascript:void(0)" onclick="alert('InternNova adheres to strict privacy and data protection standards.')" class="dropdown-item">
+            <i data-lucide="shield" class="dropdown-icon"></i>
+            <span>Privacy Policy</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Interactive 3D Audio FX Toggle -->
+      <button id="sound-toggle-btn" class="sound-toggle-btn" aria-label="Toggle Sound Effects" title="Interactive UI Sound FX">
+        <i data-lucide="volume-x"></i>
+      </button>
+
+      <!-- Theme Switcher -->
+      <button id="theme-toggle-btn" class="icon-btn theme-toggle" aria-label="Switch Theme">
+        <i data-lucide="sun"></i>
+      </button>
+
+      <div class="desktop-only-btns">
+        <button onclick="openLoginModal('staff')" class="btn btn-outline btn-sm nav-login-btn">Staff Login</button>
+        <button onclick="openLoginModal('student')" class="btn btn-primary btn-sm nav-login-btn">Student Login</button>
+      </div>
+
+      <!-- Hamburger toggle for mobile -->
+      <button class="icon-btn menu-toggle" aria-label="Open Navigation Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" style="display:none;">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-head">
+        <a href="#" class="site-logo">
+          <img src="/logo.png" alt="InternNova" height="38" />
+        </a>
+        <button class="icon-btn mobile-close-btn" aria-label="Close Menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="mobile-drawer-body">
+        <div class="mobile-auth-grid">
+          <button onclick="openLoginModal('student')" class="btn btn-primary btn-block">Student Login</button>
+          <button onclick="openLoginModal('staff')" class="btn btn-outline btn-block">Staff Login</button>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px; margin-top:24px;">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#pro" class="nav-link">Pro Internships</a>
+          <a href="#courses" class="nav-link">Courses</a>
+          <a href="#internships" class="nav-link">Domain Tracks</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#student-corner" class="nav-link">Student Corner</a>
+          <a href="#why-us" class="nav-link">Why InternNova</a>
+          <a href="#process" class="nav-link">How It Works</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION with 3D Robot & Orbital Particle Sphere (Replacing pink circle) -->
+    <section class="hero" id="home">
+      
+      <!-- 3D STAGE: Spline Robot + Particle Sphere in Background -->
+      <div class="hero-stage-container" id="hero-3d-stage">
+        <!-- 3D Particle Sphere in background (Image 1 reference) -->
+        <div class="particle-sphere-backdrop"></div>
+        <img src="/particles_sphere.png" alt="3D Particle Sphere" class="particle-sphere-image" />
+        
+        <!-- Interactive WebGL Three.js Canvas: 3D Robot following mouse cursor -->
+        <canvas id="robot-canvas"></canvas>
+
+        <!-- Dynamic ground spotlight floor glow -->
+        <div class="stage-spotlight-floor"></div>
+      </div>
+
+      <div class="hero-content-layer">
+        <!-- Time dynamic greeting badge -->
+        <div class="hero-greeting-wrapper">
+          <div class="hero-greeting-badge">
+            <span id="hero-greeting-text">Good Evening 🌙</span>
+            <span class="greeting-divider">•</span>
+            <span>Welcome to InternNova</span>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Education Theme (Graduation Cap & Orbit) Behind INTERN NOVA -->
+        <div class="hero-brand-wrap">
+          <div class="education-3d-backdrop">
+            <canvas id="education-canvas"></canvas>
+          </div>
+          <h1 class="hero-brand">INTERN NOVA</h1>
+        </div>
+        
+        <p class="hero-tagline">Build real skills. Land real jobs.</p>
+
+        <div class="hero-cta">
+          <a href="#pro" class="btn btn-primary">Explore Programs</a>
+          <a href="#process" class="btn btn-outline">How it works</a>
+        </div>
+
+        <div>
+          <div class="robot-hint-pill" onclick="if(window.InternNovaSound) window.InternNovaSound.playRobotClick()">
+            <span class="robot-hint-dot"></span>
+            <span>Move cursor to guide 3D Robot &amp; Graduation Cap • Click to interact</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upgraded Feature Marquee Bar with Glassmorphic .uni-card Pills & Hover-Pause -->
+    <div class="feature-marquee-wrapper">
+      <div class="feature-pill-track">
+        <!-- Set 1 -->
+        <div class="feature-pill"><i data-lucide="award"></i> Verified Certificate Included</div>
+        <div class="feature-pill"><i data-lucide="folder-git-2"></i> Real-World Projects</div>
+        <div class="feature-pill"><i data-lucide="users"></i> 1:1 Industry Mentorship</div>
+        <div class="feature-pill"><i data-lucide="file-check"></i> Formal Offer Letter</div>
+        <div class="feature-pill"><i data-lucide="megaphone"></i> Campus Ambassador Applications</div>
+        <div class="feature-pill"><i data-lucide="clock"></i> Limited Cohort Seats</div>
+        <div class="feature-pill"><i data-lucide="code-2"></i> Capstone Code Reviews</div>
+        <div class="feature-pill"><i data-lucide="sparkles"></i> ATS Portfolio Prep</div>
+
+        <!-- Set 2 (Duplicated for seamless loop with hover-pause) -->
+        <div class="feature-pill"><i data-lucide="award"></i> Verified Certificate Included</div>
+        <div class="feature-pill"><i data-lucide="folder-git-2"></i> Real-World Projects</div>
+        <div class="feature-pill"><i data-lucide="users"></i> 1:1 Industry Mentorship</div>
+        <div class="feature-pill"><i data-lucide="file-check"></i> Formal Offer Letter</div>
+        <div class="feature-pill"><i data-lucide="megaphone"></i> Campus Ambassador Applications</div>
+        <div class="feature-pill"><i data-lucide="clock"></i> Limited Cohort Seats</div>
+        <div class="feature-pill"><i data-lucide="code-2"></i> Capstone Code Reviews</div>
+        <div class="feature-pill"><i data-lucide="sparkles"></i> ATS Portfolio Prep</div>
+      </div>
+    </div>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card tilt-card">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Students Trained</div>
+        </div>
+        <div class="stat-card tilt-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Industry Domains</div>
+        </div>
+        <div class="stat-card tilt-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Weeks Duration</div>
+        </div>
+        <div class="stat-card tilt-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Verified Certificates</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D WAVE RIBBON SHOWCASE SECTION (Image 2 reference) -->
+    <section class="ribbon-showcase-section">
+      <div class="ribbon-canvas-wrap">
+        <canvas id="ribbon-canvas"></canvas>
+      </div>
+      <img src="/wave_ribbon.png" alt="3D Ribbon Wave" class="ribbon-image-overlay" />
+      <div class="ribbon-content">
+        <h2 class="ribbon-tagline">We turn complex ideas into effortless experiences</h2>
+        <p class="ribbon-subtitle">Interactive 3D project execution, industry-grade toolsets, and hands-on guidance for future engineers.</p>
+        <button onclick="openApplyModal('Pro Experience')" class="btn btn-primary btn-sm">Start Your Experience <i data-lucide="arrow-right" size="14"></i></button>
+      </div>
+    </section>
+
+    <!-- PRO INTERNSHIPS SECTION -->
+    <section class="section dot-grid" id="pro" style="padding-top:60px; padding-bottom:60px; background-color:var(--surface);">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:30px; flex-wrap:wrap; gap:16px;">
+          <div class="section-head" style="margin-bottom:0;">
+            <span class="eyebrow">Pro Experience</span>
+            <h2>Pro Internships</h2>
+            <p>Exclusive, mentor-led programs with personalized career guidance and advanced career support.</p>
+          </div>
+          <a href="javascript:void(0)" onclick="openApplyModal('Pro Track')" style="color:var(--accent); font-size:0.9rem; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
+            Explore All <i data-lucide="arrow-right" size="14"></i>
+          </a>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px;">
+          <!-- Track 1 -->
+          <div class="card tilt-card" style="padding:28px; display:flex; flex-direction:column; position:relative; overflow:hidden; border:1px solid var(--border);">
+            <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, var(--blob-purple), var(--blob-gold));"></div>
+            <div style="width:44px; height:44px; border-radius:12px; background:rgba(139, 92, 246, 0.12); display:flex; align-items:center; justify-content:center; margin-bottom:18px; color:var(--blob-purple);">
+              <i data-lucide="terminal" size="22"></i>
+            </div>
+            <h3 style="font-size:1.25rem; font-weight:600; margin-bottom:16px;">Full Stack Web Development</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 24px 0; display:flex; flex-direction:column; gap:10px; color:var(--text-muted); font-size:0.9rem; flex:1;">
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Real-World Projects & Capstone</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> 1:1 Expert Mentorship & Code Reviews</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Modern Tech Stack (React, Node, DB)</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Industry-Oriented Tasks & Agile Sprints</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> ATS Resume & Career Guidance</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Verified Premium Certificate</li>
+            </ul>
+            <button onclick="openApplyModal('Full Stack Web Development')" class="btn btn-primary btn-block btn-sm" style="background:linear-gradient(90deg, var(--blob-purple), var(--blob-gold)); border:none;">
+              Apply Now <i data-lucide="arrow-right" size="14"></i>
+            </button>
+          </div>
+
+          <!-- Track 2 -->
+          <div class="card tilt-card" style="padding:28px; display:flex; flex-direction:column; position:relative; overflow:hidden; border:1px solid var(--border);">
+            <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+            <div style="width:44px; height:44px; border-radius:12px; background:rgba(56, 189, 248, 0.12); display:flex; align-items:center; justify-content:center; margin-bottom:18px; color:#38bdf8;">
+              <i data-lucide="brain" size="22"></i>
+            </div>
+            <h3 style="font-size:1.25rem; font-weight:600; margin-bottom:16px;">Artificial Intelligence & ML</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 24px 0; display:flex; flex-direction:column; gap:10px; color:var(--text-muted); font-size:0.9rem; flex:1;">
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Deep Learning & Neural Architectures</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Generative AI & OpenAI API Projects</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Real Dataset Pipelines & Modeling</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Autonomous AI Agent Development</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Career Mentorship & Portfolio Building</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Verified Premium Certificate</li>
+            </ul>
+            <button onclick="openApplyModal('Artificial Intelligence & ML')" class="btn btn-primary btn-block btn-sm" style="background:linear-gradient(90deg, #38bdf8, #818cf8); border:none;">
+              Apply Now <i data-lucide="arrow-right" size="14"></i>
+            </button>
+          </div>
+
+          <!-- Track 3 -->
+          <div class="card tilt-card" style="padding:28px; display:flex; flex-direction:column; position:relative; overflow:hidden; border:1px solid var(--border);">
+            <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, #ec4899, #f59e0b);"></div>
+            <div style="width:44px; height:44px; border-radius:12px; background:rgba(236, 72, 153, 0.12); display:flex; align-items:center; justify-content:center; margin-bottom:18px; color:#ec4899;">
+              <i data-lucide="bar-chart-3" size="22"></i>
+            </div>
+            <h3 style="font-size:1.25rem; font-weight:600; margin-bottom:16px;">Data Analytics & BI</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 24px 0; display:flex; flex-direction:column; gap:10px; color:var(--text-muted); font-size:0.9rem; flex:1;">
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Advanced SQL Queries & Data Modeling</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Power BI Executive Dashboards</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Business Case Studies & EDA</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Data Storytelling for Stakeholders</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Placement Prep & Mock Interviews</li>
+              <li style="display:flex; align-items:center; gap:8px;"><i data-lucide="check" size="15" color="#22c55e"></i> Verified Premium Certificate</li>
+            </ul>
+            <button onclick="openApplyModal('Data Analytics & BI')" class="btn btn-primary btn-block btn-sm" style="background:linear-gradient(90deg, #ec4899, #f59e0b); border:none;">
+              Apply Now <i data-lucide="arrow-right" size="14"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREMIUM COURSES SECTION -->
+    <section class="section" id="courses" style="padding-top:60px; padding-bottom:60px;">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:30px;">
+          <div class="section-head" style="margin-bottom:0;">
+            <span class="eyebrow">Learn & Grow</span>
+            <h2>Premium Courses</h2>
+            <p>Rigorous training programs designed to prepare you for top-tier product companies.</p>
+          </div>
+          <a href="javascript:void(0)" onclick="openApplyModal('Course Track')" style="color:var(--accent); font-size:0.9rem; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
+            Explore All Courses <i data-lucide="arrow-right" size="14"></i>
+          </a>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
+          <div class="card tilt-card" style="padding:24px; border:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span style="font-size:0.8rem; background:rgba(139, 92, 246, 0.15); color:#a855f7; padding:4px 10px; border-radius:6px; font-weight:600;">8 Weeks Track</span>
+              <span style="font-size:0.85rem; color:#f59e0b; display:flex; align-items:center; gap:4px;">★ 4.9 (420+ reviews)</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Full Stack MERN Architecture</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;">Master MongoDB, Express, React & Node.js with production deployments and CI/CD pipelines.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:1.1rem; font-weight:700; color:var(--text);">₹1,499</span>
+              <button onclick="openApplyModal('Course: MERN')" class="btn btn-outline btn-sm">Enroll Now</button>
+            </div>
+          </div>
+
+          <div class="card tilt-card" style="padding:24px; border:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span style="font-size:0.8rem; background:rgba(56, 189, 248, 0.15); color:#38bdf8; padding:4px 10px; border-radius:6px; font-weight:600;">10 Weeks Track</span>
+              <span style="font-size:0.85rem; color:#f59e0b; display:flex; align-items:center; gap:4px;">★ 4.9 (380+ reviews)</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Machine Learning & AI Engineering</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;">Supervised & unsupervised learning, PyTorch models, NLP, and LLM fine-tuning techniques.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:1.1rem; font-weight:700; color:var(--text);">₹1,799</span>
+              <button onclick="openApplyModal('Course: ML & AI')" class="btn btn-outline btn-sm">Enroll Now</button>
+            </div>
+          </div>
+
+          <div class="card tilt-card" style="padding:24px; border:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span style="font-size:0.8rem; background:rgba(236, 72, 153, 0.15); color:#ec4899; padding:4px 10px; border-radius:6px; font-weight:600;">6 Weeks Track</span>
+              <span style="font-size:0.85rem; color:#f59e0b; display:flex; align-items:center; gap:4px;">★ 4.8 (290+ reviews)</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Enterprise Java & Spring Boot</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;">Object-oriented architecture, RESTful microservices, Hibernate, and scalable backend design.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:1.1rem; font-weight:700; color:var(--text);">₹1,299</span>
+              <button onclick="openApplyModal('Course: Java')" class="btn btn-outline btn-sm">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS & WORKSHOPS SECTION -->
+    <section class="section dot-grid" id="events" style="padding-top:60px; padding-bottom:60px;">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:30px; flex-wrap:wrap; gap:16px;">
+          <div class="section-head" style="margin-bottom:0;">
+            <span class="eyebrow">Community & Learning</span>
+            <h2>Events & Workshops</h2>
+            <p>Join our exclusive masterclasses, hackathons, and career workshops.</p>
+          </div>
+          <a href="javascript:void(0)" onclick="openApplyModal('Event Registration')" style="color:var(--accent); font-size:0.9rem; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
+            See All Events <i data-lucide="arrow-right" size="14"></i>
+          </a>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:24px;">
+          <div class="card tilt-card" style="padding:24px; border:1px solid var(--border); display:flex; flex-direction:column;">
+            <div style="font-size:0.85rem; color:var(--blob-purple); font-weight:600; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+              <i data-lucide="calendar" size="14"></i> Next Saturday at 6:00 PM IST
+            </div>
+            <h3 style="font-size:1.2rem; margin-bottom:10px;">Masterclass: GenAI & LLMs in Production</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px; flex:1;">Build production-grade applications with function calling, vector databases, and real-time streaming.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.85rem; color:#22c55e; font-weight:600;">Free Live Session</span>
+              <button onclick="openApplyModal('Event: GenAI Masterclass')" class="btn btn-primary btn-sm">Register Now</button>
+            </div>
+          </div>
+
+          <div class="card tilt-card" style="padding:24px; border:1px solid var(--border); display:flex; flex-direction:column;">
+            <div style="font-size:0.85rem; color:var(--blob-purple); font-weight:600; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+              <i data-lucide="calendar" size="14"></i> Upcoming Cohort Briefing
+            </div>
+            <h3 style="font-size:1.2rem; margin-bottom:10px;">Tech Resume & ATS Portfolio Sprint</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px; flex:1;">Learn insider strategies for optimizing GitHub, LinkedIn, and crafting resumes that pass recruiter screens.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.85rem; color:#22c55e; font-weight:600;">Free Live Session</span>
+              <button onclick="openApplyModal('Event: ATS Resume Sprint')" class="btn btn-primary btn-sm">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIP DOMAIN PROGRAMS SECTION (The Ledger) -->
+    <section class="section" id="internships" style="padding-top:60px; padding-bottom:60px;">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:20px; flex-wrap:wrap; gap:16px;">
+          <div class="section-head" style="margin-bottom:0;">
+            <span class="eyebrow">The Ledger</span>
+            <h2>Internship Programs</h2>
+            <p>Hands-on, project-based internship programs designed to take you from fundamentals to real-world applications.</p>
+          </div>
+          
+          <!-- Category Filter Tabs -->
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="filter-tab-btn active btn btn-outline btn-sm" data-category="all">All (6)</button>
+            <button class="filter-tab-btn btn btn-outline btn-sm" data-category="dev">Development</button>
+            <button class="filter-tab-btn btn btn-outline btn-sm" data-category="data-ai">Data & AI</button>
+            <button class="filter-tab-btn btn btn-outline btn-sm" data-category="security">Security</button>
+          </div>
+        </div>
+
+        <!-- 6 Domain Program Cards with Week-by-Week Roadmaps -->
+        <div class="programs-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; margin-top:24px;">
+          
+          <!-- Domain 01: Web Dev -->
+          <div class="program-card tilt-card program-card-item" data-category="dev">
+            <span class="program-code">D-01</span>
+            <div class="card-icon"><i data-lucide="code-2" size="24"></i></div>
+            <h3>Web Development</h3>
+            <p style="flex:1;">HTML, CSS, JavaScript, Git & Final Project.</p>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:var(--ok-500); margin:16px 0;">
+              <i data-lucide="award" size="14"></i> Certificate Included
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button onclick="showRoadmap('web-dev')" class="btn btn-outline btn-sm" style="flex:1;">Roadmap</button>
+              <button onclick="openApplyModal('Web Development (D-01)')" class="btn btn-primary btn-sm" style="flex:1.5;">Apply Now <i data-lucide="arrow-right" size="14"></i></button>
+            </div>
+          </div>
+
+          <!-- Domain 02: Data Analytics -->
+          <div class="program-card tilt-card program-card-item" data-category="data-ai">
+            <span class="program-code">D-02</span>
+            <div class="card-icon"><i data-lucide="pie-chart" size="24"></i></div>
+            <h3>Data Analytics</h3>
+            <p style="flex:1;">Excel, Power BI, SQL, Dashboard Creation.</p>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:var(--ok-500); margin:16px 0;">
+              <i data-lucide="award" size="14"></i> Certificate Included
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button onclick="showRoadmap('data')" class="btn btn-outline btn-sm" style="flex:1;">Roadmap</button>
+              <button onclick="openApplyModal('Data Analytics (D-02)')" class="btn btn-primary btn-sm" style="flex:1.5;">Apply Now <i data-lucide="arrow-right" size="14"></i></button>
+            </div>
+          </div>
+
+          <!-- Domain 03: Cyber Security -->
+          <div class="program-card tilt-card program-card-item" data-category="security">
+            <span class="program-code">D-03</span>
+            <div class="card-icon"><i data-lucide="shield-check" size="24"></i></div>
+            <h3>Cyber Security</h3>
+            <p style="flex:1;">Network Security, Ethical Hacking Basics, Cyber Awareness.</p>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:var(--ok-500); margin:16px 0;">
+              <i data-lucide="award" size="14"></i> Certificate Included
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button onclick="showRoadmap('cyber')" class="btn btn-outline btn-sm" style="flex:1;">Roadmap</button>
+              <button onclick="openApplyModal('Cyber Security (D-03)')" class="btn btn-primary btn-sm" style="flex:1.5;">Apply Now <i data-lucide="arrow-right" size="14"></i></button>
+            </div>
+          </div>
+
+          <!-- Domain 04: Artificial Intelligence -->
+          <div class="program-card tilt-card program-card-item" data-category="data-ai">
+            <span class="program-code">D-04</span>
+            <div class="card-icon"><i data-lucide="cpu" size="24"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <p style="flex:1;">Python, ML basics, ChatGPT APIs, Mini Project.</p>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:var(--ok-500); margin:16px 0;">
+              <i data-lucide="award" size="14"></i> Certificate Included
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button onclick="showRoadmap('ai')" class="btn btn-outline btn-sm" style="flex:1;">Roadmap</button>
+              <button onclick="openApplyModal('Artificial Intelligence (D-04)')" class="btn btn-primary btn-sm" style="flex:1.5;">Apply Now <i data-lucide="arrow-right" size="14"></i></button>
+            </div>
+          </div>
+
+          <!-- Domain 05: Python Programming -->
+          <div class="program-card tilt-card program-card-item" data-category="dev">
+            <span class="program-code">D-05</span>
+            <div class="card-icon"><i data-lucide="file-code" size="24"></i></div>
+            <h3>Python Programming</h3>
+            <p style="flex:1;">Python Basics, Automation, APIs & Project Development.</p>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:var(--ok-500); margin:16px 0;">
+              <i data-lucide="award" size="14"></i> Certificate Included
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button onclick="showRoadmap('python')" class="btn btn-outline btn-sm" style="flex:1;">Roadmap</button>
+              <button onclick="openApplyModal('Python Programming (D-05)')" class="btn btn-primary btn-sm" style="flex:1.5;">Apply Now <i data-lucide="arrow-right" size="14"></i></button>
+            </div>
+          </div>
+
+          <!-- Domain 06: Java Development -->
+          <div class="program-card tilt-card program-card-item" data-category="dev">
+            <span class="program-code">D-06</span>
+            <div class="card-icon"><i data-lucide="coffee" size="24"></i></div>
+            <h3>Java Development</h3>
+            <p style="flex:1;">Core Java, OOP, JDBC & Project Development.</p>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:var(--ok-500); margin:16px 0;">
+              <i data-lucide="award" size="14"></i> Certificate Included
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button onclick="showRoadmap('java')" class="btn btn-outline btn-sm" style="flex:1;">Roadmap</button>
+              <button onclick="openApplyModal('Java Development (D-06)')" class="btn btn-primary btn-sm" style="flex:1.5;">Apply Now <i data-lucide="arrow-right" size="14"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENT CORNER SECTION -->
+    <section class="section dot-grid" id="student-corner" style="padding-top:60px; padding-bottom:60px; background-color:var(--bg-main);">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Tools & Resources</span>
+          <h2>Student Corner</h2>
+          <p>Everything you need to showcase your skills and stand out to top employers.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
+          <!-- 1. Portfolio -->
+          <div class="card tilt-card" style="padding:26px; cursor:pointer; display:flex; flex-direction:column;" onclick="alert('Student Projects Showcase: Over 4,200 repositories deployed by InternNova graduates.')">
+            <div style="width:48px; height:48px; border-radius:12px; background:rgba(56, 189, 248, 0.12); color:#38bdf8; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="folder-git-2" size="24"></i>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Project Portfolio</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); flex:1;">Explore and showcase real-world projects built by our top students.</p>
+          </div>
+
+          <!-- 2. AI Resume Builder -->
+          <div class="card tilt-card" style="padding:26px; cursor:pointer; display:flex; flex-direction:column;" onclick="openApplyModal('AI Resume Review Request')">
+            <div style="width:48px; height:48px; border-radius:12px; background:rgba(236, 72, 153, 0.12); color:#ec4899; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="sparkles" size="24"></i>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">AI Resume Builder</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); flex:1;">Craft an ATS-friendly resume that highlights your achievements.</p>
+          </div>
+
+          <!-- 3. Verify Certificate -->
+          <div class="card tilt-card" style="padding:26px; cursor:pointer; display:flex; flex-direction:column;" onclick="openVerifyModal()">
+            <div style="width:48px; height:48px; border-radius:12px; background:rgba(16, 185, 129, 0.12); color:#10b981; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="check-circle-2" size="24"></i>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Verify Certificate</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); flex:1;">Authenticate your completion certificate with a unique Verification ID.</p>
+          </div>
+
+          <!-- 4. Campus Ambassador -->
+          <div class="card tilt-card" style="padding:26px; cursor:pointer; display:flex; flex-direction:column;" onclick="openApplyModal('Campus Ambassador Application')">
+            <div style="width:48px; height:48px; border-radius:12px; background:rgba(245, 158, 11, 0.12); color:#f59e0b; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="megaphone" size="24"></i>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:8px;">Campus Ambassador</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); flex:1;">Represent InternNova on your campus and earn exclusive perks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY INTERNNOVA SECTION -->
+    <section class="section dot-grid" id="why-us" style="padding-top:60px; padding-bottom:60px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why InternNova</span>
+          <h2>More than just an internship.</h2>
+          <p>We focus on what actually matters: hands-on experience, verifiable skills, and a strong project portfolio.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card tilt-card">
+            <div class="feature-icon"><i data-lucide="laptop" size="24"></i></div>
+            <h3>Real-World Projects</h3>
+            <p>Build applications that solve actual industry problems, not just generic tutorials.</p>
+          </div>
+          <div class="feature-card tilt-card">
+            <div class="feature-icon"><i data-lucide="file-check-2" size="24"></i></div>
+            <h3>Offer Letter</h3>
+            <p>Receive a formal offer letter marking the start of your professional journey with us.</p>
+          </div>
+          <div class="feature-card tilt-card">
+            <div class="feature-icon"><i data-lucide="award" size="24"></i></div>
+            <h3>Verified Certificate</h3>
+            <p>Every completion certificate has a unique ID verifiable by future employers.</p>
+          </div>
+          <div class="feature-card tilt-card">
+            <div class="feature-icon"><i data-lucide="clock" size="24"></i></div>
+            <h3>Flexible Learning</h3>
+            <p>Balance your academics with our structured but flexible remote internships.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY 100+ UNIVERSITIES SECTION -->
+    <section class="colleges-section" id="universities" style="padding:60px 0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Global Community</span>
+          <h2>Trusted by Students From 100+ Universities</h2>
+          <p>From premier Indian institutes to top global universities, students choose InternNova.</p>
+        </div>
+      </div>
+
+      <div class="university-marquee">
+        <div class="university-track">
+          <!-- Set 1 -->
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Bombay</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Delhi</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> BITS Pilani</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Madras</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> NIT Trichy</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Delhi University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> VIT Vellore</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> SRM Institute</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> DTU Delhi</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Manipal University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Kharagpur</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Roorkee</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIIT Hyderabad</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Anna University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Jadavpur University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> NIT Surathkal</div>
+          
+          <!-- Set 2 (Identical for seamless infinite scroll) -->
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Bombay</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Delhi</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> BITS Pilani</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Madras</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> NIT Trichy</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Delhi University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> VIT Vellore</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> SRM Institute</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> DTU Delhi</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Manipal University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Kharagpur</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIT Roorkee</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> IIIT Hyderabad</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Anna University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> Jadavpur University</div>
+          <div class="uni-card"><i data-lucide="graduation-cap"></i> NIT Surathkal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section" id="process" style="padding-top:60px; padding-bottom:60px;">
+      <div class="container">
+        <div class="section-head" style="margin-bottom:60px;">
+          <span class="eyebrow">How it works</span>
+          <h2>Your Path to Success</h2>
+        </div>
+
+        <div class="process-list">
+          <div class="process-row tilt-card">
+            <div class="process-num">1</div>
+            <div>
+              <h3>Apply & Enroll</h3>
+              <p>Select your preferred domain and complete the simple enrollment process to secure your spot in the upcoming batch.</p>
+            </div>
+          </div>
+          <div class="process-row tilt-card">
+            <div class="process-num">2</div>
+            <div>
+              <h3>Access the Dashboard</h3>
+              <p>Log in to your personalized student dashboard where you'll find your offer letter, weekly tasks, and learning resources.</p>
+            </div>
+          </div>
+          <div class="process-row tilt-card">
+            <div class="process-num">3</div>
+            <div>
+              <h3>Build Projects</h3>
+              <p>Complete weekly tasks and build real-world projects with guidance from industry experts.</p>
+            </div>
+          </div>
+          <div class="process-row tilt-card">
+            <div class="process-num">4</div>
+            <div>
+              <h3>Get Certified</h3>
+              <p>Submit your final evaluation to receive your verified internship completion certificate and recommendation letter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+    <section class="section faq-section" id="faq" style="padding-top:60px; padding-bottom:60px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Got Questions?</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list" style="max-width:800px; margin:0 auto;">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <h3>Do I need prior coding experience?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Basic understanding helps, but our programs are designed to take you from fundamentals to advanced concepts through practical projects.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Will I get a verified certificate?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, every completion certificate comes with a unique Verification ID that employers can check directly on our platform.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Are the internships paid?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </div>
+            <div class="faq-answer">
+              <p>The core learning internships are unpaid skill-building programs. However, top performers may receive paid freelance opportunities or stipends based on their project performance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How does the placement support work?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </div>
+            <div class="faq-answer">
+              <p>For Pro Internships, we help you build an ATS-friendly resume, optimize your portfolio, conduct mock interviews, and share your profile with our hiring partners.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does each internship program last?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Our virtual internship tracks run for 6 weeks, structured into 4 comprehensive milestones with flexible submission timelines to balance with college exams.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I do multiple domain internships simultaneously?</h3>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We recommend enrolling in one domain track at a time to ensure dedicated focus on high quality project submissions and capstone completion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D COSMIC NEBULA / STAY CONNECTED SECTION (Image 3 reference) -->
+    <section class="nebula-section" id="newsletter">
+      <div class="nebula-canvas-wrap">
+        <canvas id="nebula-canvas"></canvas>
+      </div>
+      <img src="/nebula_cloud.png" alt="Cosmic Nebula Cloud" class="nebula-image-bg" />
+
+      <div class="container" style="position:relative; z-index:2;">
+        <div class="nebula-content tilt-card">
+          <span class="eyebrow" style="color:#c084fc;">STAY CONNECTED</span>
+          <h2 style="font-size:2rem; margin-top:8px; margin-bottom:12px;">Subscribe to our Newsletter</h2>
+          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6; margin-bottom:28px;">
+            Get exclusive updates, new batch announcements, and career opportunities delivered directly to your inbox.
+          </p>
+
+          <form onsubmit="handleNewsletterSubmit(event)" style="display:flex; gap:12px; max-width:480px; margin:0 auto; flex-wrap:wrap;">
+            <input type="email" id="newsletter-email" class="form-input" placeholder="Enter your email address..." required style="flex:1; min-width:240px;" />
+            <button type="submit" class="btn btn-primary" style="white-space:nowrap;">Subscribe <i data-lucide="send" size="14"></i></button>
+          </form>
+          <p style="font-size:0.75rem; color:var(--text-faint); margin-top:14px;">No spam, ever. Unsubscribe anytime with 1-click.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Brand & Socials -->
+      <div class="footer-col footer-brand">
+        <div class="footer-logo" style="display:inline-block; margin-bottom:12px;">
+          <img src="/logo.png" alt="InternNova" height="52" style="display:block;" />
+        </div>
+        <p>India's internship & certification platform. Build real skills, land real jobs.</p>
+        <div class="footer-socials">
+          <div style="display:flex; align-items:center; gap:12px; margin-top:12px;">
+            <a href="https://www.linkedin.com/company/internnovaofficial/" target="_blank" rel="noreferrer" aria-label="LinkedIn" style="color:#64748b; display:flex; align-items:center;">
+              <i data-lucide="linkedin" size="18"></i>
+            </a>
+            <a href="https://www.instagram.com/internnova.co.in/" target="_blank" rel="noreferrer" aria-label="Instagram" style="color:#64748b; display:flex; align-items:center;">
+              <i data-lucide="instagram" size="18"></i>
+            </a>
+            <a href="https://wa.me/919534196255" target="_blank" rel="noreferrer" aria-label="WhatsApp" style="color:#64748b; display:flex; align-items:center;">
+              <i data-lucide="message-circle" size="18"></i>
+            </a>
+            <a href="https://youtube.com/@internnova?si=4sI1pxP2rJ08dpe5" target="_blank" rel="noreferrer" aria-label="YouTube" style="color:#64748b; display:flex; align-items:center;">
+              <i data-lucide="youtube" size="18"></i>
+            </a>
+            <a href="https://x.com/TheInternNova" target="_blank" rel="noreferrer" aria-label="X (Twitter)" style="color:#64748b; display:flex; align-items:center;">
+              <i data-lucide="twitter" size="18"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 2: Platform -->
+      <div class="footer-col">
+        <h3>PLATFORM</h3>
+        <a href="javascript:void(0)" onclick="openApplyModal('Hire Top Talent')">Hire Top Talent</a>
+        <a href="javascript:void(0)" onclick="openVerifyModal()">Verify Certificate</a>
+        <a href="#why-us">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <!-- Col 3: Legal -->
+      <div class="footer-col">
+        <h3>LEGAL</h3>
+        <a href="javascript:void(0)" onclick="alert('InternNova Terms & Conditions are compliant with Indian MSME regulations.')">Terms & Conditions</a>
+        <a href="javascript:void(0)" onclick="alert('InternNova adheres to strict privacy and data protection standards.')">Privacy Policy</a>
+        <a href="javascript:void(0)" onclick="alert('Refund Policy: Clear 100% money-back guarantee within 48 hours for paid tracks.')">Refund Policy</a>
+        <a href="javascript:void(0)" onclick="alert('Cancellation Policy: Free cancellation before cohort start date.')">Cancellation Policy</a>
+      </div>
+
+      <!-- Col 4: Contact & Registration -->
+      <div class="footer-col">
+        <h3>CONTACT</h3>
+        <a href="mailto:support@internnova.co.in" style="display:flex; align-items:center; gap:8px;">
+          <i data-lucide="mail" size="14"></i> support@internnova.co.in
+        </a>
+        <a href="tel:+919534196255" style="display:flex; align-items:center; gap:8px;">
+          <i data-lucide="phone" size="14"></i> +91 9534196255
+        </a>
+        <div class="msme-badge" style="margin-top:14px; padding:10px 14px; background:var(--surface-2); border-radius:8px; border:1px solid var(--border); font-size:0.8rem; color:var(--text-muted); line-height:1.4;">
+          <strong style="color:var(--text); display:block;">MSME Registered</strong>
+          <span>UDYAM-BR-24-0054689</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom" style="margin-top:40px; padding-top:24px; border-top:1px solid var(--border); text-align:center; color:var(--text-faint); font-size:0.85rem;">
+      <p>© 2026 InternNova. All rights reserved. Built with 3D WebGL & Interactive Three.js technology.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON -->
+  <a href="https://wa.me/919534196255?text=Hello%20InternNova" class="whatsapp-float" target="_blank" rel="noreferrer">
+    <i data-lucide="message-circle" size="20"></i>
+    <span>Chat With Us</span>
+  </a>
+
+  <!-- UNIVERSAL MODAL SYSTEM -->
+  <div id="universal-modal-overlay" class="modal-overlay">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">
+        <i data-lucide="x" size="18"></i>
+      </button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript Libraries & 3D Interactive Engines -->
+  <script src="/libs/three.min.js"></script>
+  <script src="/libs/lucide.min.js"></script>
+  <script src="/js/robot3d.js"></script>
+  <script src="/js/education3d.js"></script>
+  <script src="/js/ribbon3d.js"></script>
+  <script src="/js/nebula3d.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

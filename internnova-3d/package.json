@@ -1,0 +1,19 @@
+{
+  "name": "internnova-3d",
+  "version": "1.0.0",
+  "description": "3D Interactive Clone of InternNova with Spline robot cursor tracking, particle spheres, and flowing waves.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "internnova",
+    "threejs",
+    "3d",
+    "spline",
+    "robot",
+    "interactive"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}
